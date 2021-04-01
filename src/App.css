@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 50vmin;
+  height: 200px;
   pointer-events: none;
 }
 
@@ -13,8 +13,29 @@
   }
 }
 
+  .App-Mamute {
+    height: 300px;
+    position: absolute;
+    animation: mamuteVoador 4s linear infinite;
+  }
+
+  @keyframes mamuteVoador{
+    0%{
+        transform:rotate(0deg) translate(-300px) rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg) translate(-300px) rotate(-360deg)
+    }
+  }
+
+  @keyframes mudarCores{
+    from {background-position: center center, left center;}
+    to {background-position: center center, right center;}
+  }
+
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(to bottom,green,purple,red),linear-gradient(to right,blue,pink,white);
+  background-size: 100% 100%,2000% 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +43,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  animation: mudarCores 5s infinite;
 }
 
 .App-link {

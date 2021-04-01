@@ -1,4 +1,5 @@
 import logo from './fae.webp';
+import logoMamute from './images/maramutao-cabuloso.png';
 import './App.css';
 import {useState} from "react"
 
@@ -15,22 +16,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <img src={logoMamute} className="App-Mamute"/>
         <p style={{color: corBotao}}>
-         Fael Bonitao {resultado}
+         Mamutao Do Fael {resultado}
         </p>
-        <input onChange={(input)=>setValorA( parseInt(input.target.value) )}></input>
+        {/* <input onChange={(input)=>setValorA( parseInt(input.target.value) )}></input>
         <input onChange={(input)=>setValorB( parseInt(input.target.value) )}></input>
         <button onClick={()=>somar()}>somar</button>
         <button onClick={()=>setCorBotao("green")}>Verde</button>
-        <button onClick={()=>setCorBotao("blue")}>Azul</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={()=>setCorBotao("blue")}>Azul</button> */}
       </header>
     </div>
   );
