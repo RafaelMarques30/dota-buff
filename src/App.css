@@ -6,6 +6,16 @@
   height: 200px;
   pointer-events: none;
 }
+.heroImage {
+  height: 200px;
+  
+}
+.heroItem {
+  border: 1px solid white;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 15px; 
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
